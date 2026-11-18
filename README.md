@@ -15,6 +15,10 @@ python app.py
 
 Open http://127.0.0.1:5000. Demo login: **student@gjacademy.com** / **Demo@123**. The Flask secret is ephemeral by default, so restarting the server signs the user out; optionally set `GJ_DEMO_SECRET` for a stable local session. This login is deliberately not production security. Run only on a trusted local machine.
 
+## GitHub Pages
+
+GitHub Pages is static hosting and cannot run Flask. Run `python build_pages.py` to render the existing templates into the root `index.html` and static page routes used by https://gjgenie.github.io/DashboardGJ/. The generated demo login is client-side only; the app remains a simulation and must not be used for real authentication or trading. Re-run the exporter after changing templates or the frontend JavaScript, then commit the generated pages.
+
 ## Explore
 
 Sign in to the strategy marketplace, view details, and subscribe using the placeholder credentials `demo-key` and `demo-secret`. They are discarded and never persisted. Activate a subscription to configure risk limits and monitor subscribed strategy activity in the trading terminal. Orders, positions, settings, and analytics share browser-local non-sensitive demo state, which survives refresh. Reset it under Settings. The chart, notification and other Phase 2 placeholders are labeled in the interface. Subscription cancellation or strategy stop never closes an open position. Manual order entry and position closing are not available on this platform. Automated strategy execution is not implemented in Phase 1.

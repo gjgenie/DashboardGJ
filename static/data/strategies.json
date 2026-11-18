@@ -1,0 +1,5 @@
+[
+ {"id":"time-machine","name":"GJ Crypto Time Machine","market":"Crypto","instrument":"BTCUSD","risk":"Higher","description":"A time-cycle-based breakout and retracement strategy with risk management and configurable stop-loss and targets.","tag":"TIME CYCLES","number":"01"},
+ {"id":"dishayantra","name":"GJ Dishayantra","market":"Crypto / Index","instrument":"BTCUSD","risk":"Moderate","description":"A technical trading strategy combining moving averages, RSI and signal confirmation.","tag":"SIGNAL CONFIRMATION","number":"02"},
+ {"id":"price-action","name":"GJ Price Action","market":"Crypto / Index","instrument":"BTCUSD","risk":"Higher","description":"A price action strategy using breakout, pullback and confirmation logic.","tag":"MARKET STRUCTURE","number":"03"}
+]

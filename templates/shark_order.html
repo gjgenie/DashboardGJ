@@ -1,0 +1,24 @@
+<section class="panel shark-panel shark-order-panel" aria-labelledby="shark-order-heading">
+  <div class="eyebrow">TEMPORARY TEST · REAL SHARK ACCOUNT</div>
+  <h2 id="shark-order-heading">BTCUSDT order tester</h2>
+  <p id="shark-status" role="status">Checking connection…</p>
+  <p class="shark-gate-notice" id="shark-availability">Live order submission is disabled until explicitly enabled in the local configuration.</p>
+  <form id="shark-order">
+    <fieldset class="shark-choice shark-side"><legend>Order side</legend>
+      <label><input type="radio" name="side" value="BUY" checked><span>↗ Buy / Long</span></label>
+      <label><input type="radio" name="side" value="SELL"><span>↘ Sell / Short</span></label>
+    </fieldset>
+    <div class="shark-account-setting">Margin mode & leverage <strong>Set at Shark</strong></div>
+    <fieldset class="shark-choice shark-type"><legend>Order type</legend>
+      <label><input type="radio" name="type" value="MARKET" checked><span>Market</span></label>
+      <label><input type="radio" name="type" value="LIMIT"><span>Limit</span></label>
+    </fieldset>
+    <label class="shark-input-label">Quantity (BTC)<input name="quantity" type="number" value="0.002" step="0.001" min="0.002" max="0.002" required></label>
+    <label class="shark-input-label" id="limit-label" hidden>Limit price (USDT)<input name="price" type="number" min="0.00000001" step="any"></label>
+    <p class="small muted">POC size: exactly 0.002 BTC. Shark must verify minimum and precision.</p>
+    <button class="button buy full shark-review" id="shark-review" type="submit">Review Buy / Long BTC</button>
+  </form>
+  <p class="shark-order-warning">Real funds: a market order may execute immediately. A limit order may remain open. An opposite-side order reduces an existing position only after you confirm the preview. The app will not silently reverse it. Open BTCUSDT orders block submission.</p>
+  <div id="shark-preview" hidden><h3>Confirm this exact order</h3><p id="shark-preview-details"></p><p><b>Real account warning:</b> This order can affect real funds and uses your existing Shark account settings.</p><label class="check acknowledgment"><input type="checkbox" id="shark-confirm"> I confirm the exact order above.</label><button id="shark-submit" class="button danger full" disabled>Submit real order</button><p id="shark-gate" class="small muted"></p></div>
+  <p id="shark-result" role="status"></p>
+</section>

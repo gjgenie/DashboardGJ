@@ -90,6 +90,7 @@ document.querySelector('.login-form form').addEventListener('submit', event => {
 
 
 def main():
+    app.config["STATIC_EXPORT"] = True
     client = app.test_client()
     export_login(client)
     with client.session_transaction() as session:

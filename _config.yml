@@ -1,0 +1,10 @@
+# Local application and credentials UI are never part of the GitHub Pages site.
+exclude:
+  - app.py
+  - shark_exchange.py
+  - build_pages.py
+  - requirements.txt
+  - local_only
+  - templates
+  - tests
+  - .venv

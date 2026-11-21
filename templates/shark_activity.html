@@ -1,0 +1,11 @@
+<section class="panel shark-panel" id="shark-activity" aria-labelledby="shark-activity-heading">
+  <div class="panel-heading"><div><div class="eyebrow">SHARK EXCHANGE · REAL ACCOUNT · READ ONLY</div><h2 id="shark-activity-heading">BTCUSDT account activity</h2><p>Orders placed on Shark appear here separately from simulated activity. Auto-refreshes every 30 seconds while this page is open.</p></div><button class="button secondary" id="shark-refresh" type="button">Refresh</button></div>
+  <p id="shark-activity-status" role="status" aria-live="polite">Connecting to Shark…</p>
+  <div id="shark-activity-content" hidden>
+    <div class="shark-activity-section"><h3>Open orders</h3><p>Accepted orders may still be waiting to fill.</p><div id="shark-open-orders"></div></div>
+    <div class="shark-activity-section"><h3>Recent executed trades</h3><p>Completed executions reported by Shark; a single order can have multiple fills.</p><div id="shark-trades"></div></div>
+    <div class="shark-activity-section"><h3>Recent order history</h3><p>Statuses reported by Shark, including cancelled and rejected orders when available.</p><div id="shark-order-history"></div></div>
+    <div class="shark-activity-section"><h3>Open positions</h3><p>Positions reported by Shark for BTCUSDT.</p><div id="shark-positions"></div></div>
+  </div>
+  <p class="small muted">Showing up to 20 records per section. This view does not place trades. <a class="text-link" href="/subscribe">Connect or disconnect Shark →</a></p>
+</section>
